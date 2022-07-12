@@ -6,10 +6,11 @@ export const Container = styled.div`
   align-items: center;
   width: 100%;
   height: 60px;
-  background-color: green;
+  background-color: none;
 
   position: fixed;
   bottom: 0;
+  z-index: 9;
 `
 
 export const SubContainer = styled.div`
