@@ -13,7 +13,6 @@ export default function Footer () {
 
         <SubContainer>
           <Img src={IconMusic}/>
-          <Img src={IconMusic}/>
         </SubContainer>
       </Container>
   )
