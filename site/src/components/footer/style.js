@@ -5,8 +5,8 @@ export const Container = styled.div`
   justify-content: space-around;
   align-items: center;
   width: 100vw;
-  height: 60px;
-  background-color: none;
+  height: 40px;
+  /* background-color: red; */
 
   position: fixed;
   bottom: 10px;
@@ -24,7 +24,7 @@ export const SubContainer = styled.div`
 `
 
 export const Img = styled.img`
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   margin-right: 24px;
 `

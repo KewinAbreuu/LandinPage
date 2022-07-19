@@ -1,5 +1,4 @@
 import { createGlobalStyle } from 'styled-components'
-import Pirulen from './assets/pirulen.otf'
 export const GlobalStyle = createGlobalStyle`
   *{
     box-sizing: border-box;
@@ -12,11 +11,6 @@ export const GlobalStyle = createGlobalStyle`
 
   :root{
     --primary: #14f0ff;
-  }
-
-  @font-face {
-    font-family: 'Double Porter' ;
-    src: url(${Pirulen}) format('otf');
   }
 
 `

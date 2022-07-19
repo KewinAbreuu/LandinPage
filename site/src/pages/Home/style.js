@@ -8,8 +8,11 @@ export const HomeContainer = styled.div`
   align-items: center;
   width: 100vw;
   height: 100vh;
+  background-color: #4f4f4f;
 
-  background-color: red;
+  /* @media(max-width:870px){
+    height:60vh;
+  } */
 `
 
 export const Banner = styled.div`
@@ -53,27 +56,29 @@ export const Down = styled.img`
 export const AgendaContainer = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 30px 0px 0px 0px;
+  /* padding: 30px 0px 0px 0px; */
   align-items: center;
   justify-content: space-around;
   width: 100vw;
   height: auto;
   /* background-color: var(--primary); */
-  background-color: #081731;
+  background-color: #091F34;
   padding: 50px 0px 50px 0px;
-  margin-bottom: 30px;
 `
 
 export const AgendaSubContainer = styled.div`
   display: flex;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-  width: 90%;
-  height: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height:auto;
   z-index: 8;
-  width: 90%;
   margin-top: 20px;
+
+  @media(max-width:870px){
+    width:100%;
+  }
   /* Largura da barra de rolagem */
 ::-webkit-scrollbar {
     width: 10px;
@@ -108,5 +113,78 @@ export const Title = styled.h1`
 `
 
 export const AgendaTextImage = styled.img`
-  width: 30%;
+  width: 300px;
+
+  @media(max-width:870px){
+    width: 250px;
+}
+`
+export const PostTextImage = styled.img`
+  width: 250px;
+  margin-bottom: 20px;
+
+  @media(max-width:870px){
+    width: 200px;
+}
+`
+
+export const PostsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 300px;
+
+  background-color: #000;
+`
+
+export const PostsSubContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  max-width: 90%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+   /* Largura da barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px;
+    /* height: 8px; */
+}
+
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track-piece {
+    background-color: #000;
+    border-left: 1px solid #CCC;
+}
+
+/* Cor do indicador de rolagem */
+::-webkit-scrollbar-thumb:vertical,
+::-webkit-scrollbar-thumb:horizontal {
+    background-color: #717171;
+    border:  solid 1px #fff;
+    border-radius: 10px;
+}
+
+/* Cor do indicador de rolagem - ao passar o mouse */
+::-webkit-scrollbar-thumb:vertical:hover,
+::-webkit-scrollbar-thumb:horizontal:hover {
+    background-color: #7a228a;
+    cursor: pointer;
+}
+
+`
+
+export const PostImage = styled.img`
+  max-width: 200px;
+  transition: all ease-in-out 1s;
+  -webkit-mask-image: linear-gradient(to top, transparent 5%, black 100%);
+
+  :hover{
+    transform: scale(1.2);
+    cursor:pointer;
+    -webkit-mask-image:none;
+  }
+
 `

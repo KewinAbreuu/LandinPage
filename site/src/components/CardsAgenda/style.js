@@ -4,11 +4,11 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 500px;
-  height: 100px;
+  width: 100%;
+  height: 150px;
   z-index: 1;
 
-  margin-right: 10px;
+  margin-bottom: 10px;
 
 `
 export const Day = styled.div`
@@ -17,7 +17,7 @@ export const Day = styled.div`
   justify-content: center;
   align-items: center;
   width: 130px;
-  height: 100px;
+  height: 100%;
   z-index: 1;
 
   background-color: #4a1054;
@@ -27,7 +27,7 @@ export const Local = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100px;
+  height: 100%;
   z-index: 1;
 
   background-color: #cdcdcd;
@@ -57,4 +57,6 @@ export const TextLocal = styled.h1`
  font-size: 25px;
  font-family: sans-serif;
  color: #4a1054;
+
+
 `
